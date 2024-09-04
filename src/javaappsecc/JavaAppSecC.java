@@ -16,8 +16,11 @@ public class JavaAppSecC {
 //}
 
 //        Product pr = new Product();
-//        pr.addProduct(1011, "soap",20,30,20.00);
+//        pr.addProduct(1011, "soap",20,30,20."00);
 //        pr.viewProduct();
+
+  ProductInput productInput = new ProductInput();
+        productInput.genProducts();
 //            }
 //Grades gr = new Grades();
 //Scanner sc = new Scanner (System.in);
@@ -37,7 +40,7 @@ public class JavaAppSecC {
 //}
 
 
-  Salaries salariesprocess = new Salaries();
-        salariesprocess.genSalaries();
+//  Salaries salariesprocess = new Salaries();
+//        salariesprocess.genSalaries();
     }
 }
