@@ -19,11 +19,11 @@ public class JavaAppSecC {
 //        pr.addProduct(1011, "soap",20,30,20."00);
 //        pr.viewProduct();
 
-  ProductInput productInput = new ProductInput();
-        productInput.genProducts();
+//  ProductInput productInput = new ProductInput();
+//        productInput.genProducts();
 //            }
-//Grades gr = new Grades();
-//Scanner sc = new Scanner (System.in);
+ students studentApp = new students();
+        studentApp.genGrade();
 //
 //
 //    System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s\n",
