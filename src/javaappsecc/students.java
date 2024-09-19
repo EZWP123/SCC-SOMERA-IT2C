@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package javaappsecc;
 import java.util.Scanner;
 
@@ -32,11 +28,11 @@ public class students {
     }
     }
 
-    @SuppressWarnings("empty-statement")
+
     public void genGrade(){
         Scanner sc = new Scanner(System.in);
         Grades[] gr = new Grades[100];
-
+        
         String op;
         int nums = 0;
         
@@ -82,10 +78,11 @@ public class students {
             System.out.println("Finals:");
             double fn = sc.nextDouble();
 
-            gr[i] = new Grades();
-            gr[i].addGrades(id, name, pr, md, pf, fn);
+             gr[i] = new Grades();
+             gr[i].addGrades(id, name, pr, md, pf, fn);
         }
-
+             System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s\n", 
+                "ID", "Name", "Prelim", "Midterm", "Prefinal", "Finals", "Average" ,"Remarks");   
         for (int i = 0; i < nums; i++) {
             gr[i].viewGrades();
         }
@@ -101,15 +98,35 @@ public class students {
                 System.out.println(""+ids);
                 editGrades(gr, nums, ids);
             break;
-            }
-                
-            System.out.println("Do you want to continue?(Y/N): ");
-            op=sc.next();
-        }while(op.equals("Y")|| op.equals("y"));
-
-    
+            case 4:
+                System.out.println("Enter the ID to delete:");
             
-        
-      
-            }  
+            int idToDelete = sc.nextInt();
+            for (int i = 0; i < nums; i++) {
+            if (gr[i].id == idToDelete) {
+            for (int x = i; x < nums - 1; x++) {
+            gr[x] = gr[x+ 1];
+            }
+            nums--;
+            System.out.println("Student with ID " + idToDelete + " deleted successfully.");
+        }
+    }
+            break;  
+            
+            case 5:
+        System.out.println("Byeeeeeeeeeeeeeeeeeeeee!");
+        System.exit(0);
+        break;
+        default:
+        System.out.println("Invalid choice. Please try again.");
+        break;
 }
+                
+                
+        System.out.println("Do you want to continue?(Y/N): ");
+     op = sc.next();
+     }while("Y".equals(op)|| "y".equals(op));
+                }
+
+                
+            }

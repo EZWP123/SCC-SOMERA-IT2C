@@ -19,10 +19,13 @@ class ProductInput {
 
         System.out.print("Enter product price: ");
         double price = scanner.nextDouble();
-
+        
+        System.out.println("Product information:");        
         product.addProduct(id, name, sold, stock, price);
-
-        System.out.println("Product information:");
+         System.out.printf("%-10s %-20s %-10s %-10s %-10s %-10s %-15s %-10s\n",
+                      "Id", "Name" , "sold" , "Stock" , "prices", "profit" , "status", "TotalValue");
         product.viewProduct();
-    }
+    
+   
+}
 }

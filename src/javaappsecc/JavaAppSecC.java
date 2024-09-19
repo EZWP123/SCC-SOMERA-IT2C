@@ -2,16 +2,16 @@
 
 package javaappsecc;
 
-import java.util.Scanner;
+
 
 
 public class JavaAppSecC {
     public static void main(String[] args) {
 //        
-//    Payget pg = new Payget();
-//    pg.getPay();
+    Payget pg = new Payget();
+    pg.getPay();
 //        
-//    }
+//    
 //    
 //}
 
@@ -21,9 +21,9 @@ public class JavaAppSecC {
 
 //  ProductInput productInput = new ProductInput();
 //        productInput.genProducts();
-//            }
- students studentApp = new students();
-        studentApp.genGrade();
+//            
+// students studentApp = new students();
+//        studentApp.genGrade();
 //
 //
 //    System.out.printf("%-10s %-10s %-10s %-10s %-10s %-10s %-10s %-10s\n",
@@ -38,7 +38,8 @@ public class JavaAppSecC {
 //
 //}
 //}
-
+//     Accounts accounts = new Accounts();
+//        accounts.genAccounts();
 
 //  Salaries salariesprocess = new Salaries();
 //        salariesprocess.genSalaries();
